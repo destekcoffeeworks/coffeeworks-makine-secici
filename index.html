@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoffeeWorks · Makine İhtiyaç Analizi</title>
+<meta name="description" content="CoffeeWorks satış ekibi için makine konfigürasyon ve ihtiyaç analizi aracı.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="ust">
+  <div class="ustIc">
+    <div>
+      <p class="marka">Coffee<em>Works</em> · Makine İhtiyaç Analizi</p>
+      <p>Müşteriyle masada yanıtlayın. Soru cevaplandıkça uygun olmayan modeller eleme cetvelinde elenir, sonunda teklife girecek ve girmeyecek kalemleri gösteren bir rapor çıkar.</p>
+    </div>
+    <div class="ilerlemeKutu">
+      <span id="ilerleme">0/12 soru</span>
+      <div class="cubuk"><i id="ilerlemeCubuk"></i></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="kabuk">
+
+  <div>
+    <section class="musteriKutu">
+      <h2>Görüşme bilgileri</h2>
+      <div class="alanlar">
+        <div><label for="firma">Firma</label><input id="firma" type="text" placeholder="Örn. Ankara İş Merkezi A.Ş."></div>
+        <div><label for="kisi">Görüşülen kişi</label><input id="kisi" type="text" placeholder="Ad, unvan"></div>
+        <div><label for="lokasyon">Lokasyon</label><input id="lokasyon" type="text" placeholder="İl / bina / kat"></div>
+        <div><label for="temsilci">CoffeeWorks temsilcisi</label><input id="temsilci" type="text" placeholder="Adınız"></div>
+      </div>
+    </section>
+
+    <form id="sorular" autocomplete="off"></form>
+
+    <div class="eylemler">
+      <button type="button" id="raporBtn" disabled>Raporu oluştur</button>
+      <button type="button" id="sifirlaBtn" class="ikincil">Formu temizle</button>
+    </div>
+  </div>
+
+  <aside class="yan">
+    <h2>Eleme cetveli</h2>
+    <p>Bir modelin elenmesi fiyatla değil, müşterinin menüsü veya altyapısıyla ilgilidir. Gerekçe her satırın altında görünür.</p>
+    <ul id="cizelge"></ul>
+  </aside>
+  </div>
+
+  <section class="raporSarmal sayfa" id="raporSarmal" hidden>
+    <div class="raporAraclar">
+      <button type="button" id="yazdirBtn">Yazdır / PDF kaydet</button>
+      <button type="button" id="kopyalaBtn" class="ikincil">Metin olarak kopyala</button>
+    </div>
+    <div id="rapor"></div>
+  </section>
+
+  <section class="kunyeler sayfa">
+    <h2>Makine künyeleri</h2>
+    <p>Portföydeki on modelin doğrulanmış teknik verisi. Kırmızı işaretli iki modelin üretici dökümanı teyit edilemedi; bu satırlardaki rakamlar müşteriye aktarılmamalı.</p>
+    <div id="kunyeler"></div>
+  </section>
+
+</main>
+
+<footer class="altBant">
+  <div>Teknik veriler üretici dökümanları ve yetkili distribütör spec sayfalarından derlenmiştir (Eylül 2026). Opsiyon, fiyat ve teslim kalemleri teklif öncesi distribütörle teyit edilir.</div>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
