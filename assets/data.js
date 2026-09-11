@@ -509,7 +509,7 @@ const KONTROL_LISTESI = [
 const ILETISIM = {
   sirket: "CoffeeWorks",
   slogan: "Kahve Hizmeti Bizden. Kontrol Sizde.",
-  telefonlar: ["0546 935 35 53", "0554 776 77 77"],
+  telefonlar: ["0546 935 35 53","0554 776 77 77"],
   eposta: "destekcoffeeworks@gmail.com",            // örn. "teklif@coffeeworks.com.tr"
   web: "hazırlanıyor",               // örn. "www.coffeeworks.com.tr"
   adres: "Ankara",             // opsiyonel, örn. "Gölbaşı / Ankara"
