@@ -499,3 +499,20 @@ const KONTROL_LISTESI = [
   { metin: "Ödeme modülü ve muhasebe entegrasyonu", kosul: (c) => c.odeme === "ucretli" },
   { metin: "Tezgah genişliği ve fincan yüksekliği (ölçü alınmalı)", kosul: () => true }
 ];
+
+/* ---------------------------------------------------------------
+   İLETİŞİM BİLGİLERİ
+   Tek yerden yönetilir: üst bant, rapor başlığı, sayfa altı ve
+   "metin olarak kopyala" çıktısı bu nesneden beslenir.
+   Boş bırakılan alan hiçbir yerde görünmez — uydurma veri basılmaz.
+   --------------------------------------------------------------- */
+const ILETISIM = {
+  sirket: "CoffeeWorks",
+  slogan: "Kahve Hizmeti Bizden. Kontrol Sizde.",
+  telefonlar: ["0546 935 35 53", "0554 776 77 77"],
+  eposta: "",            // örn. "teklif@coffeeworks.com.tr"
+  web: "",               // örn. "www.coffeeworks.com.tr"
+  adres: "",             // opsiyonel, örn. "Gölbaşı / Ankara"
+  bolgeler: "Bölge depoları: İstanbul · Ankara · Bursa · İzmir · Antalya",
+  destek: "7/24 saha desteği"
+};
