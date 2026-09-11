@@ -510,9 +510,9 @@ const ILETISIM = {
   sirket: "CoffeeWorks",
   slogan: "Kahve Hizmeti Bizden. Kontrol Sizde.",
   telefonlar: ["0546 935 35 53", "0554 776 77 77"],
-  eposta: "",            // örn. "teklif@coffeeworks.com.tr"
-  web: "",               // örn. "www.coffeeworks.com.tr"
-  adres: "",             // opsiyonel, örn. "Gölbaşı / Ankara"
+  eposta: "destekcoffeeworks@gmail.com",            // örn. "teklif@coffeeworks.com.tr"
+  web: "hazırlanıyor",               // örn. "www.coffeeworks.com.tr"
+  adres: "Ankara",             // opsiyonel, örn. "Gölbaşı / Ankara"
   bolgeler: "Bölge depoları: İstanbul · Ankara · Bursa · İzmir · Antalya",
   destek: "7/24 saha desteği"
 };
